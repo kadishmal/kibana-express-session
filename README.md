@@ -1,7 +1,11 @@
 # kibana-express-session
 
-A Kibana plugin to check if a user is authenticated. Uses `express-session-hapi` module
-to check for session data in Redis.
+A Kibana plugin to check (*and only check*) if a user is authenticated.
+Uses `express-session-hapi` module to check for session data in Redis.
+
+This module **does not** perform the actual authentication. It does not
+register any route handler. It only checks if the user is authenticated.
+If not, it redirects to a configurable `redirectTo` location.
 
 ## Usage
 
@@ -21,6 +25,7 @@ kibana-express-session:
   enabled: true
   redis:
     host: ''
+  redirectTo: '/login'
   secret: ''
 ```
 
