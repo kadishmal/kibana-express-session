@@ -9,7 +9,7 @@ If not, it redirects to a configurable `redirectTo` location.
 
 ## Usage
 
-    ./bin/kibana plugin -i kibana-express-session -u https://github.com/kadishmal/kibana-express-session/releases/download/v1.0.0/kibana-express-session.zip
+    ./bin/kibana plugin -i kibana-express-session -u https://github.com/kadishmal/kibana-express-session/releases/download/v1.0.0/kibana-express-session-1.0.0.zip
 
 **Notice** that when specifying a URL via `-u` flag, Kibana requires the URL to point
 to a ZIP file which includes all the dependencies. Kibana doesn't run `npm install`
